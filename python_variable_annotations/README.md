@@ -7,7 +7,7 @@ True
 {'a':  <class 'float'>, 'b': <class 'float'>, 'return': <class 'float'>}
 ```
 
-program [0-add.py]
+program [0-add.py](https://github.com/Mylliah/holbertonschool-web_back_end/blob/main/python_variable_annotations/0-add.py)
 
 
 ### Task 1 :
@@ -20,7 +20,7 @@ True
 {'str1': <class 'str'>, 'str2': <class 'str'>, 'return': <class 'str'>}
 ```
 
-program [1-concat.py]
+program [1-concat.py](https://github.com/Mylliah/holbertonschool-web_back_end/blob/main/python_variable_annotations/1-concat.py)
 
 
 ### Task 2 :
@@ -34,7 +34,7 @@ True
 floor(3.14) returns 3, which is a <class 'int'>
 ```
 
-program [2-floor.py]
+program [2-floor.py](https://github.com/Mylliah/holbertonschool-web_back_end/blob/main/python_variable_annotations/2-floor.py)
 
 
 ### Task 3 :
@@ -48,7 +48,7 @@ True
 to_str(3.14) returns 3.14, which is a <class 'str'>
 ```
 
-program [3-to_str.py]
+program [3-to_str.py](https://github.com/Mylliah/holbertonschool-web_back_end/blob/main/python_variable_annotations/3-to_str.py)
 
 
 ### Task 4 :
@@ -67,7 +67,7 @@ i_understand_annotations is a <class 'bool'> with a value of True
 school is a <class 'str'> with a value of Holberton
 ```
 
-program [4-define_variables.py]
+program [4-define_variables.py](https://github.com/Mylliah/holbertonschool-web_back_end/blob/main/python_variable_annotations/4-define_variables.py)
 
 
 ### Task 5 :
@@ -81,7 +81,7 @@ True
 sum_list(floats) returns 6.470000000000001 which is a <class 'float'>
 ```
 
-program [5-sum_list.py]
+program [5-sum_list.py](https://github.com/Mylliah/holbertonschool-web_back_end/blob/main/python_variable_annotations/5-sum_list.py)
 
 
 ### Task 6 :
@@ -95,7 +95,7 @@ True
 sum_mixed_list(mixed) returns 679.13 which is a <class 'float'>
 ```
 
-program [6-sum_mixed_list.py]
+program [6-sum_mixed_list.py](https://github.com/Mylliah/holbertonschool-web_back_end/blob/main/python_variable_annotations/6-sum_mixed_list.py)
 
 
 ### Task 7 :
@@ -109,7 +109,7 @@ Write a type-annotated function `to_kv` that takes a string `k` and an int OR fl
 ('school', 0.0004)
 ```
 
-program [7-to_kv.py]
+program [7-to_kv.py](https://github.com/Mylliah/holbertonschool-web_back_end/blob/main/python_variable_annotations/7-to_kv.py)
 
 
 ### Task 8 :
@@ -122,7 +122,7 @@ Write a type-annotated function `make_multiplier` that takes a float `multiplier
 4.928400000000001
 ```
 
-program [8-make_multiplier.py]
+program [8-make_multiplier.py](https://github.com/Mylliah/holbertonschool-web_back_end/blob/main/python_variable_annotations/8-make_multiplier.py)
 
 
 ### Task 9 :
@@ -134,4 +134,4 @@ Annotate the below function’s parameters and return values with the appropriat
 {'lst': typing.Iterable[typing.Sequence], 'return': typing.List[typing.Tuple[typing.Sequence, int]]}
 ```
 
-program [9-element_length.py]
+program [9-element_length.py](https://github.com/Mylliah/holbertonschool-web_back_end/blob/main/python_variable_annotations/9-element_length.py)
