@@ -9,7 +9,7 @@ The coroutine will loop 10 times, each time asynchronously wait 1 second, then y
 [4.403136952967102, 6.9092712604587465, 6.293445466782645, 4.549663490048418, 4.1326571686139015, 9.99058525304903, 6.726734105473811, 9.84331704602206, 1.0067279479988345, 1.3783306401737838]
 ```
 
-program [0-async_generator.py]
+program [0-async_generator.py](https://github.com/Mylliah/holbertonschool-web_back_end/blob/main/python_async_comprehension/0-async_generator.py)
 
 
 ### Task 1 :
@@ -24,7 +24,7 @@ The coroutine will collect 10 random numbers using an async comprehensing over `
 
 ```
 
-program [1-async_comprehension.py]
+program [1-async_comprehension.py](https://github.com/Mylliah/holbertonschool-web_back_end/blob/main/python_async_comprehension/1-async_comprehension.py)
 
 
 ### Task 2 :
@@ -41,4 +41,4 @@ Notice that the total runtime is roughly 10 seconds, explain it to yourself.
 
 ```
 
-program [2-measure_runtime.py]
+program [2-measure_runtime.py](https://github.com/Mylliah/holbertonschool-web_back_end/blob/main/python_async_comprehension/2-measure_runtime.py)

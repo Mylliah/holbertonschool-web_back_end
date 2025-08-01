@@ -11,7 +11,7 @@ Use the `random` module.
 10.634589756751769
 ```
 
-program [0-basic_async_syntax.py]
+program [0-basic_async_syntax.py](https://github.com/Mylliah/holbertonschool-web_back_end/blob/main/python_async_function/0-basic_async_syntax.py)
 
 
 ### Task 1 :
@@ -27,7 +27,7 @@ Import `wait_random` from the previous python file that you’ve written and wri
 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
 ```
 
-program [1-concurrent_coroutines.py]
+program [1-concurrent_coroutines.py](https://github.com/Mylliah/holbertonschool-web_back_end/blob/main/python_async_function/1-concurrent_coroutines.py)
 
 
 ### Task 2 :
@@ -43,7 +43,7 @@ Use the `time` module to measure an approximate elapsed time.
 1.759705400466919
 ```
 
-program [2-measure_runtime.py]
+program [2-measure_runtime.py](https://github.com/Mylliah/holbertonschool-web_back_end/blob/main/python_async_function/2-measure_runtime.py)
 
 
 ### Task 3 :
@@ -57,7 +57,7 @@ Write a function (do not create an async function, use the regular function synt
 <class '_asyncio.Task'>
 ```
 
-program [3-tasks.py]
+program [3-tasks.py](https://github.com/Mylliah/holbertonschool-web_back_end/blob/main/python_async_function/3-tasks.py)
 
 
 ### Task 4 :
@@ -69,4 +69,4 @@ Take the code from `wait_n` and alter it into a new function `task_wait_n`. The 
 [0.2261658205652346, 1.1942770588220557, 1.8410422186086628, 2.1457353803430523, 4.002505454641153]
 ```
 
-program [4-tasks.py]
+program [4-tasks.py](https://github.com/Mylliah/holbertonschool-web_back_end/blob/main/python_async_function/4-tasks.py)
