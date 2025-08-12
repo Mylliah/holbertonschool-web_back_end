@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
+"""Simple pagination module for a popular first name database."""
 
+
+import csv
 import csv
 import math
 from typing import List
