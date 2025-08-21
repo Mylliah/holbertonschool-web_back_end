@@ -1,49 +1,59 @@
-export default class HolbertonCourse {
-  constructor(name, length, students) {
-    if (typeof name !== 'string') {
-      throw new TypeError('name must be a string');
-    }
-    if (typeof length !== 'number') {
-      throw new TypeError('length must be a number');
-    }
-    if (!Array.isArray(students) || !students.every((s) => typeof s === 'string')) {
-      throw new TypeError('students must be an array of strings');
-    }
-    this._name = name;
-    this._length = length;
-    this._students = students;
+function HolbertonCourse(name, length, students) {
+  if (typeof name !== 'string') {
+    throw new TypeError('name must be a string');
+  }
+  if (typeof length !== 'number') {
+    throw new TypeError('length must be a number');
+  }
+  if (!Array.isArray(students) || !students.every(function (s) { return typeof s === 'string'; })) {
+    throw new TypeError('students must be an array of strings');
   }
 
-  get name() {
+  this._name = name;
+  this._length = length;
+  this._students = students;
+}
+
+Object.defineProperty(HolbertonCourse.prototype, 'name', {
+  get: function () {
     return this._name;
-  }
-
-  set name(value) {
+  },
+  set: function (value) {
     if (typeof value !== 'string') {
       throw new TypeError('name must be a string');
     }
     this._name = value;
-  }
+  },
+  enumerable: false,
+  configurable: true,
+});
 
-  get length() {
+Object.defineProperty(HolbertonCourse.prototype, 'length', {
+  get: function () {
     return this._length;
-  }
-
-  set length(value) {
+  },
+  set: function (value) {
     if (typeof value !== 'number') {
       throw new TypeError('length must be a number');
     }
     this._length = value;
-  }
+  },
+  enumerable: false,
+  configurable: true,
+});
 
-  get students() {
+Object.defineProperty(HolbertonCourse.prototype, 'students', {
+  get: function () {
     return this._students;
-  }
-
-  set students(value) {
-    if (!Array.isArray(value) || !value.every((s) => typeof s === 'string')) {
+  },
+  set: function (value) {
+    if (!Array.isArray(value) || !value.every(function (s) { return typeof s === 'string'; })) {
       throw new TypeError('students must be an array of strings');
     }
     this._students = value;
-  }
-}
+  },
+  enumerable: false,
+  configurable: true,
+});
+
+export default HolbertonCourse;
