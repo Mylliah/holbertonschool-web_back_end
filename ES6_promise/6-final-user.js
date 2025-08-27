@@ -14,10 +14,10 @@ export default function handleProfileSignup(firstName, lastName, fileName) {
             value: result.value,
           };
         }
-      return {
-        status: result.status,
-        value: result.reason,
-      };
+        return {
+          status: result.status,
+          value: result.reason,
+        };
+      });
     });
-  });
 }
