@@ -12,11 +12,10 @@ export default function handleProfileSignup(firstName, lastName, fileName) {
           status: result.status,
           value: result.value,
         };
-      } else {
-        return {
-          status: result.status,
-          value: result.reason.toString,
-        };
       }
+      return {
+        status: result.status,
+        value: result.reason.toString,
+      };
     }));
 }
