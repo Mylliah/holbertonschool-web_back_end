@@ -13,9 +13,9 @@ function countStudents(filePath) {
         lines.shift(); // en-tête supprimée
 
         const students = lines.map((line) => {
-            const [firstname, , , field] = line.split(',');
-            return { firstname, field };
-          });
+          const [firstname, , , field] = line.split(',');
+          return { firstname, field };
+        });
 
         console.log(`Number of students: ${students.length}`);
 
