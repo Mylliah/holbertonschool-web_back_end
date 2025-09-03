@@ -21,7 +21,11 @@ function countStudents(filePath) {
     }); // cad CS : prénoms... | SWE : prénoms...
 
     for (const field in groups) {
-      console.log(`Number of students in ${field}: ${groups[field].length}. List: ${groups[field].join(', ')}`);
+      if (Object.prototype.hasOwnProperty.call(groups, field)) {
+        console.log(
+          `Number of students in ${field}: ${groups[field].length}. List: ${groups[field].join(', ')}`
+        );
+      }
     }
   } catch (err) {
     throw new Error('Cannot load the database');
