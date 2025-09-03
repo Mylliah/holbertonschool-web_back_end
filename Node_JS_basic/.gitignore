@@ -67,3 +67,5 @@ pnpm-debug.log*
 
 # === Jest Coverage ===
 coverage/
+package-lock.json
+node_modules/
