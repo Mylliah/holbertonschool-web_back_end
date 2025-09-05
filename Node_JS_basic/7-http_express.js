@@ -5,19 +5,18 @@ const app = express();
 const DB_PATH = process.argv[2];
 
 app.get('/', (req, res) => {
-    res.send('Hello Holberton School!');
+  res.send('Hello Holberton School!');
 });
 
-
 app.get('/students', (req, res) => {
-    res.set('Content-Type', 'text/plain');
-    countStudents(DB_PATH)
-        .then((data) => {
-            res.send(`This is the list of our students\n${data}`);
-        })
-        .catch((err) => {
-            res.end(`This is the list of our students\n${err.message}`);
-        });
+  res.set('Content-Type', 'text/plain');
+  countStudents(DB_PATH)
+    .then((data) => {
+      res.send(`This is the list of our students\n${data}`);
+    })
+    .catch((err) => {
+      res.end(`This is the list of our students\n${err.message}`);
+    });
 });
 
 app.listen(1245);
