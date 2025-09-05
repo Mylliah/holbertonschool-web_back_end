@@ -17,8 +17,6 @@ function countStudents(filePath) {
           return { firstname, field };
         });
 
-        console.log(`Number of students: ${students.length}`);
-
         const groups = {};
         students.forEach((s) => {
           if (!groups[s.field]) {
@@ -27,14 +25,16 @@ function countStudents(filePath) {
           groups[s.field].push(s.firstname);
         });
 
+        const result = [];
+        result.push(`Number of students: ${students.length}`);
         for (const field in groups) {
           if (Object.prototype.hasOwnProperty.call(groups, field)) {
-            console.log(
+            result.push(
               `Number of students in ${field}: ${groups[field].length}. List: ${groups[field].join(', ')}`,
             );
           }
         }
-        resolve(); // tout s’est bien passé
+        resolve(result.join('\n')); // tout s’est bien passé
       } catch (e) {
         reject(new Error('Cannot load the database'));
       }

@@ -8,12 +8,12 @@ const app = http.createServer((req, res) => {
 
   if (req.url === '/') {
     res.end('Hello Holberton School!');
-  } else if (req.url === './students') {
+  } else if (req.url === '/students') {
     res.write('This is the list of our students\n');
 
     countStudents(DB_PATH)
-      .then(() => {
-        res.end();
+      .then((data) => {
+        res.end(data);
       })
       .catch((err) => {
         res.end(err.message);
